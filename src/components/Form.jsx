@@ -78,12 +78,11 @@ const handleExpandClick =() => {
       <Box borderRadius="borderRadius" {...defaultProps}>
 
 
-      <Button className={clsx(classes.expand, {
+      <Button className={`${clsx(classes.expand, {
         [classes.expandOpen]: expanded,
-        })}
+        })} ${classes.font}`}
         onClick={handleExpandClick}
         aria-expanded={expanded}
-        className={classes.font}
         >
         Click to add recipe</Button>
 

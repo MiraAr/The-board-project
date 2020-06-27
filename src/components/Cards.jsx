@@ -144,25 +144,23 @@ export default function RecipeReviewCard({recipe,refetch}) {
 
       <Tooltip title="Edit">
         <IconButton aria-label="edit"
-          className={clsx(classes.expand, {
+          className={`${clsx(classes.expand, {
             [classes.expandOpen]: expanded,
-          })}
+          })} ${classes.iconMargin}`}
           onClick={editIconClicked}
           aria-expanded={expanded}
-          className={classes.iconMargin}
           >
           <EditIcon />
         </IconButton>
       </Tooltip>
 
       <IconButton
-        className={clsx(classes.expand, {
-        [classes.expandOpen]: expanded,
-        })}
+        className={`${clsx(classes.expand, {
+          [classes.expandOpen]: expanded,
+          })} ${classes.iconMargin}`}
         onClick={expandIconClicked}
         aria-expanded={expanded}
         aria-label="show more"
-        className={classes.iconMargin}
         >
         <ExpandMoreIcon />
       </IconButton>
